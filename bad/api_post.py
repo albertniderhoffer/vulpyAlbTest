@@ -22,6 +22,7 @@ def cmd_api_client(message):
 
         api_key = r.json()['key']
         print('Received key:', api_key)
+        print('Received key:', api_key)
 
         with api_key_file.open('w') as outfile:
             outfile.write(api_key)
